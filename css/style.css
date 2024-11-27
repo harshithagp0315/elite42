@@ -5,31 +5,33 @@
 
 ul {
   list-style: none;
+  background-color: grey;
 }
 
 ul.parent {
   display: flex;
   justify-content: center;
-  background-color: grey;
+  padding: 10px;
 }
 ul.parent li {
   position: relative;
 }
 ul.parent li a {
-  padding: 10px;
+  padding: 5px;
   text-transform: uppercase;
   text-decoration: none;
-  cursor: pointer;
-  font-size: 18px;
+  font-size: 25px;
   color: #fff;
 }
 ul.parent li a:hover {
   color: red;
 }
-ul.parent li a ul {
+ul.parent li ul {
   position: absolute;
   display: none;
   background-color: grey;
+  width: 150px;
+  top: 40px;
 }
 ul.parent li:hover ul {
   display: block;
