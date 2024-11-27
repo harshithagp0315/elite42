@@ -1,4 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+ul.parent {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+ul.parent li a:hover {
+  color: red;
+}
+ul.parent li a ul {
+  position: absolute;
+  display: none;
+  background-color: grey;
+}
+ul.parent li:hover ul {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
