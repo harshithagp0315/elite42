@@ -1,4 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  background-color: grey;
+}
+ul li {
+  padding: 15px;
+  text-transform: uppercase;
+}
+ul a {
+  color: #fff;
+  text-decoration: none;
+}
+ul a:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
