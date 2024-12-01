@@ -5,34 +5,93 @@
 
 ul {
   list-style: none;
-  background-color: grey;
 }
 
-ul.parent {
+ul {
+  background-color: gray;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 10px;
 }
-ul.parent li {
+ul li {
   position: relative;
 }
-ul.parent li a {
-  padding: 5px;
-  text-transform: uppercase;
+ul li a {
+  color: white;
+  padding: 20px;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 25px;
-  color: #fff;
 }
-ul.parent li a:hover {
+ul li a:hover {
   color: red;
 }
-ul.parent li ul {
+ul li ul {
   position: absolute;
-  display: none;
   background-color: grey;
+  display: none;
   width: 150px;
   top: 40px;
 }
-ul.parent li:hover ul {
+ul li:hover ul {
   display: block;
+}
+
+.header {
+  background-image: url("../image/header.jpg");
+  width: 100%;
+  height: 300px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+.content .products {
+  list-style: none;
+  background-color: #fff;
+}
+.content .products .product:hover {
+  background-color: cornsilk;
+}
+.content .products .product .title {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content .products .product .discription {
+  text-align: center;
+}
+.content .products li {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #d3d3d3;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: grey;
+  height: 24px;
+}
+.content .products li img {
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  bottom: 25px;
+  left: 25px;
+}
+.content .products li:hover button {
+  color: #fff;
+  background-color: blue;
+}
+.content .products li:hover .title {
+  color: darkmagenta;
+}
+.content .products li:hover .discription {
+  color: darkgreen;
 }/*# sourceMappingURL=style.css.map */
