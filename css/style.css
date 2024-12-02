@@ -1,4 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+ul.parent {
+  display: flex;
+  background-color: grey;
+  justify-content: flex-end;
+  padding: 20px;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #fff;
+}
+ul.parent li a:hover {
+  color: red;
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+  background-color: grey;
+  width: 150px;
+  top: 40px;
+}
+ul.parent li:hover ul {
+  display: block;
+}
+
+.header {
+  background-image: url("../images/header.jpg");
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  padding: 10px;
+}
+.content .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  list-style: none;
+}
+.content .products .product:hover {
+  background-color: cornsilk;
+}
+.content .products .product .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.content .products .product .discription {
+  text-align: center;
+}
+.content .products li {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #d3d3d3;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: grey;
+  height: 24px;
+}
+.content .products li img {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+.content .products li:hover button {
+  color: #fff;
+  background-color: blue;
+}
+.content .products li:hover .title {
+  color: darkgreen;
+}
+.content .products li:hover .discription {
+  color: darkred;
+}/*# sourceMappingURL=style.css.map */
