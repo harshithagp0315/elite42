@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(157, 157, 157);
+    left: 50%;
+    transform: translate(-50%);
+    padding: 40px;
+    .header {
+        h1 {
+            padding-left: 100px;
+        }
+        p {
+            padding-left: 20px;
+        }
+    }
+    .input {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding: 0%;
+    }
+    .option1 {
+        position: relative;
+        width: 300px;
+        button {
+            position: absolute;
+            background-color: rgb(74, 116, 166);
+            color: white;
+            cursor: pointer;
+            top: 50%;
+            left: 50%;
+            top: 50px;
+            transform: translate(-50%,-50%);
+            padding: 5px;
+        }
+    }
+    .option2 {
+        position: relative; 
+        width: 300px;
+        button {
+            position: absolute;
+            background-color: rgb(74, 116, 166);
+            color: white;
+            cursor: pointer;
+            top: 50%;
+            left: 50%;
+            top: 100px;
+            transform: translate(-50%,-50%);
+            padding: 5px;
+        }
+    }
+}
